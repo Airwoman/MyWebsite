@@ -4,10 +4,10 @@
       the form contains <%= pluralize(@user.errors.count, "error") %>
     </div>
     <ul>
-    	<% @user.errors.full_message.each do |msg| %>
+    	<% @user.errors.full_messages.each do |msg| %>
     	<li><%= msg %></li>
     	<% end %>
     </ul>
   </div>
 
-  <% end %>
+<% end %>
